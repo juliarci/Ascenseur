@@ -5,12 +5,15 @@ public class DifferentsEtages extends Immeuble{
 
     private HashMap<Etage, Button> creatEtage;
     public DifferentsEtages() {
-        creatEtage=new HashMap<Etage, Button>();
-        Etage[] etgs=Etage.values();
+        super();
+        this.creatEtage=new HashMap<Etage, Button>();
+        Etage[] etgs= Etage.values();
         for(int i =0; i <=(etgs.length-1); i++){
-            creatEtage.put(etgs[i], Button.UNPRESSED);
+            this.creatEtage.put(etgs[i], Button.UNPRESSED);
         }
     }
+
+
 
     @Override
     public String toString() {

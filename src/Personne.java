@@ -1,28 +1,31 @@
 import java.util.Random;
 
-import static java.lang.Math.random;
-
-public class Personne extends Immeuble{
+public class Personne {
     private String name;
     private Etage etage;
+    protected boolean boutonappuye;
 
     public Personne(String name) {
         this.name = name;
-        Etage[] etgs=Etage.values();
+        this.boutonappuye=false;
+        Etage[] etgs = new Etage[2];
+        etgs = Etage.values();
         int index = new Random().nextInt(etgs.length);
-        this.etage = etgs[1+(index)%2];
+        this.etage = etgs[1 + (index) % 2];
     }
-
-    public void presseBoutonEtage(){
-        if(this.getDifferentsEtages().getCreatEtage().get(this.etage)==Button.UNPRESSED){
-            this.getDifferentsEtages().getCreatEtage().replace(this.etage, Button.UNPRESSED, Button.PRESSED);
-            if (this.getEtage() == Etage.ETAGE1){
+    public void presseBoutonEtage() {
+        boutonappuye =! boutonappuye;
+            if (this.getEtage() == Etage.ETAGE1) {
                 this.setEtage(Etage.ETAGE2);
-            }else{
+            } else if (this.getEtage()==Etage.REZDECHAUSSE){
                 this.setEtage(Etage.ETAGE1);
             }
-        }
+            else {
+                this.setEtage(Etage.REZDECHAUSSE);
+            }
+
     }
+
     @Override
     public String toString() {
         return "Personne{" +
