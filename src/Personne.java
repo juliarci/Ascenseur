@@ -2,7 +2,7 @@ import java.util.Random;
 
 import static java.lang.Math.random;
 
-public class Personne {
+public class Personne extends Immeuble{
     private String name;
     private Etage etage;
 
@@ -14,10 +14,13 @@ public class Personne {
     }
 
     public void presseBoutonEtage(){
-        if (this.getEtage() == Etage.ETAGE1){
-            this.setEtage(Etage.ETAGE2);
-        }else{
-            this.setEtage(Etage.ETAGE1);
+        if(this.getDifferentsEtages().getCreatEtage().get(this.etage)==Button.UNPRESSED){
+            this.getDifferentsEtages().getCreatEtage().replace(this.etage, Button.UNPRESSED, Button.PRESSED);
+            if (this.getEtage() == Etage.ETAGE1){
+                this.setEtage(Etage.ETAGE2);
+            }else{
+                this.setEtage(Etage.ETAGE1);
+            }
         }
     }
     @Override

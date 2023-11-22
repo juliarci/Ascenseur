@@ -6,6 +6,12 @@ private Ascenseur ascenseur;
 private Personne[] personnes;
 private DifferentsEtages differentsEtages;
 
+    public Immeuble() {
+        this.ascenseur=new Ascenseur();
+        this.differentsEtages=new DifferentsEtages();
+        this.creerUnePersonne();
+    }
+
     public Immeuble(int nbrPersonnes) {
         this.ascenseur=new Ascenseur();
         this.differentsEtages=new DifferentsEtages();
@@ -30,6 +36,30 @@ private DifferentsEtages differentsEtages;
                 "ascenseur=" + ascenseur +
                 ", personnes=" + Arrays.toString(personnes) +
                 '}';
+    }
+
+    public Ascenseur getAscenseur() {
+        return ascenseur;
+    }
+
+    public void setAscenseur(Ascenseur ascenseur) {
+        this.ascenseur = ascenseur;
+    }
+
+    public Personne[] getPersonnes() {
+        return personnes;
+    }
+
+    public void setPersonnes(Personne[] personnes) {
+        this.personnes = personnes;
+    }
+
+    public DifferentsEtages getDifferentsEtages() {
+        return differentsEtages;
+    }
+
+    public void setDifferentsEtages(DifferentsEtages differentsEtages) {
+        this.differentsEtages = differentsEtages;
     }
 }
 

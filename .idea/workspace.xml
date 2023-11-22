@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6222f8ae-0cfc-40b2-831a-601704331332" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/Ascenseur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Button.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DifferentsEtages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Etage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Immeuble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6222f8ae-0cfc-40b2-831a-601704331332" name="Changes" comment="Second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DifferentsEtages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DifferentsEtages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Immeuble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Immeuble.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personne.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +26,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;juliarci&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="40b9a203-83e8-40c5-8c09-e61a643f3a41" />
+        <option name="url" value="https://github.com/juliarci/Ascenseur.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -83,7 +92,8 @@
       <option name="presentableId" value="Default" />
       <updated>1700575399447</updated>
       <workItem from="1700575400674" duration="2551000" />
-      <workItem from="1700637551759" duration="2519000" />
+      <workItem from="1700637551759" duration="3777000" />
+      <workItem from="1700648284847" duration="1748000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -93,7 +103,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700575628131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second commit">
+      <option name="closed" value="true" />
+      <created>1700640110847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700640110847</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Second commit">
+      <option name="closed" value="true" />
+      <created>1700640133861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700640133861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>
