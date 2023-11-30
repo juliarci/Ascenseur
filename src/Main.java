@@ -6,8 +6,12 @@ public class Main {
         System.out.println(immeuble.toString());
         DifferentsEtages differentsEtages=new DifferentsEtages();
         System.out.println(differentsEtages.toString());
-        immeuble.appelAscenceur();
+        immeuble.appelAscenseur();
         System.out.println(Arrays.toString(immeuble.getPersonnes()));
         System.out.println(immeuble.getAscenseur());
+        immeuble.appelAscenseur();
+        System.out.println(Arrays.toString(immeuble.getPersonnes()));
+        immeuble.appelAscenseur();
+        System.out.println(Arrays.toString(immeuble.getPersonnes()));
     }
 }

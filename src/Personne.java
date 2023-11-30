@@ -5,6 +5,10 @@ public class Personne {
     private Etage etage;
     protected boolean boutonappuye;
 
+    /**
+     * Constructeur de personne
+     * @param name
+     */
     public Personne(String name) {
         this.name = name;
         this.boutonappuye=false;
@@ -13,6 +17,10 @@ public class Personne {
         int index = new Random().nextInt(etgs.length);
         this.etage = etgs[1 + (index) % 2];
     }
+
+    /**
+     * Méthode caractérisant l'appui sur le bouton d'une personne et détermine l'étage de destination
+     */
     public void presseBoutonEtage() {
         boutonappuye =! boutonappuye;
             if (this.getEtage() == Etage.ETAGE1) {
