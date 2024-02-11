@@ -19,7 +19,7 @@ public class Immeuble {
 
     }
 
-    public void appelAscenceur() {
+    public void appelAscenseur() {
         for (Personne pers : personnes) {
             //Récuperation de l'étage où la personne veut être réupérée
             this.differentsEtages.getCreatEtage().replace(pers.getEtage(), Button.UNPRESSED, Button.PRESSED);
@@ -29,27 +29,23 @@ public class Immeuble {
             if (pers.getEtage() != ascenseur.getEtage()) {
                 //Demande de changement d'étage
                 pers.presseBoutonEtage();
-                //L'ascenseur vient à l'étage de la personne
-                ascenseur.changmtEtage(ascenseur.getEtagedest());
-                //Les portes s'ouvrent
-                ascenseur.setPorteferm(false);
-                //On relocalise l'ascenseur
-                ascenseur.setEtage(ascenseur.getEtagedest());
+                //On réinitialise le bouton du palier
+                this.differentsEtages.getCreatEtage().replace(pers.getEtage(), Button.PRESSED, Button.UNPRESSED);
+                ascenseur.deplacementEtage();
+                //On amène au bon étage
+                ascenseur.ameneBonEtage(pers);
+                //Si la personne est déjà à l'étage de l'ascenseur
+            } else if (pers.getEtage() == ascenseur.getEtage()) {
                 //Signal
-                System.out.println("L'ascenseur est arrivé");
-                //On referme les portes
-                ascenseur.setPorteferm(true);
-                //On amène la personne au bon étage
-                ascenseur.changmtEtage(pers.getEtage());
-                ascenseur.setEtage(pers.getEtage());
-            }else if (pers.getEtage() == ascenseur.getEtage()) {
-                ascenseur.setPorteferm(false);
-                System.out.println("L'ascenseur à l'étage");
+                ascenseur.arriveeAscenseur();
                 //Demande de changement d'étage
                 pers.presseBoutonEtage();
-                //On amène la personne au bon étage
-                ascenseur.changmtEtage(pers.getEtage());
-                ascenseur.setEtage(pers.getEtage());
+                //On réinitialise le bouton du palier
+                this.differentsEtages.getCreatEtage().replace(pers.getEtage(), Button.PRESSED, Button.UNPRESSED);
+                //Ouverture des portes
+                ascenseur.setPorteferm(false);
+                //On amene au bon étage
+                ascenseur.ameneBonEtage(pers);
             }
         }
     }
